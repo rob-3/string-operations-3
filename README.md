@@ -23,10 +23,10 @@ summary = name + grade
 ```
 Python will throw an error and crash your program if you do this. The reason for
 this is that the `+` operator does not know how to combine a number and a string
-in Python. Though it might seem apparent to us, to the computer, strings and
-numbers are two entirely different types of data that are not compatible. The
-proper way to concatenate numbers and strings is to first convert the number
-into a string using the `str()` function.
+in Python. Though it might seem apparent to us what should happen, to the
+computer, strings and numbers are two entirely different types of data that are
+not compatible. The proper way to concatenate numbers and strings is to first
+convert the number into a string using the `str()` function.
 ```
 name = 'Einstein'
 grade = 53

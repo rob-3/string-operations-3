@@ -1,5 +1,5 @@
 # Introduction
-`string`s are one of the most commonly used types in programming. Whether they
+strings are one of the most commonly used types in programming. Whether they
 are used for log messages or for text-based interfaces, knowing how to
 manipulate strings is very convenient.
 ```
@@ -8,22 +8,25 @@ last_name = 'Smith'
 full_name = first_name + ' ' + last_name
 ```
 We have already seen that `+` can be used to add numbers, but `+` can also be
-used with `string`s. `+` will concatenate, or combine, `string`s, simply
+used with strings. `+` will concatenate, or combine, strings, simply
 attaching them one after another. Notice the `' '` which adds a space between
 the `first_name` and `last_name`. Without the `' '`, `full_name` would be
 `'JohnSmith'`.
 
 Another common idiom in Python and other languages is to combine numbers and
-`string`s. Below is an antipattern, and **will not work.**
+strings. Below is an antipattern, and **will not work.**
 ```
 name = 'Einstein'
 # Einstein wasn't always the best at school
 grade = 53
 summary = name + grade
 ```
-Python will throw an error and crash your program if you do this. The proper way
-to concatenate numbers and `string`s is to first convert the number into a
-`string` using the `str()` function.
+Python will throw an error and crash your program if you do this. The reason for
+this is that the `+` operator does not know how to combine a number and a string
+in Python. Though it might seem apparent to us, to the computer, strings and
+numbers are two entirely different types of data that are not compatible. The
+proper way to concatenate numbers and strings is to first convert the number
+into a string using the `str()` function.
 ```
 name = 'Einstein'
 grade = 53
@@ -52,18 +55,18 @@ This will work as expected.
 > '''
 > ```
 ## f-Strings
-Another way to combine multiple types of data in a `string` is to use the new
+Another way to combine multiple types of data in a string is to use the new
 Python feature f-Strings.
 > **Note:** f-Strings are only available in Python 3.6 and above.
-f-Strings provide an easy syntax to embed other `string`s and types of data
-within a `string`.
+f-Strings provide an easy syntax to embed other strings and types of data
+within a string.
 ```
 name = 'Einstein'
 grade = 53
 sentence_summary = f'{name} received a {grade} on the test.'
 # 'Einstein received a 53 on the test.' is stored in sentence_summary
 ```
-To use an f-String, simply prepend the `string` with an "f".
+To use an f-String, simply prepend the string with an "f".
 # Task
 Using both f-Strings and standard concatenation, write a program that will ask
 the user for their name and age, and print a sentence about them. The output

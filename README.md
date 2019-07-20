@@ -7,7 +7,7 @@ first_name = 'John'
 last_name = 'Smith'
 full_name = first_name + ' ' + last_name
 ```
-We have already seen that it can be used to add numbers, but `+` can also be
+We have already seen that `+` can be used to add numbers, but `+` can also be
 used with `string`s. `+` will concatenate, or combine, `string`s, simply
 attaching them one after another. Notice the `' '` which adds a space between
 the `first_name` and `last_name`. Without the `' '`, `full_name` would be

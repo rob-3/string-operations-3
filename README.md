@@ -1,5 +1,5 @@
 # Introduction
-strings are one of the most commonly used types in programming. Whether they
+Strings are one of the most commonly used types in programming. Whether they
 are used for log messages or for text-based interfaces, knowing how to
 manipulate strings is very convenient.
 ```
